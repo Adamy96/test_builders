@@ -1,3 +1,10 @@
 :root {
-  --Component-element-property: var(--color-dark)
+  --Default-color-dark: var(--color-dark);
+  --Default-color-light: var(--color-light);
+  --Default-color-grey-light: var(--color-grey-light);
+  --Default-color-grey-dark: var(--color-grey-dark);
+  --Default-color-blue: var(--color-blue);
+  --Default-color-blue-light: var(--color-blue-light);
+
+  --WeatherReport-Card-backgroundColor: var(--color-light);
 }

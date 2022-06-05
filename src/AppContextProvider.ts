@@ -1,7 +1,7 @@
-import { ThemeProvider } from '@context'
+import { LoadingProvider, ThemeProvider, UserProvider } from '@context'
 import { combineComponents } from '@helper'
 
-const providers = [ThemeProvider]
+const providers = [LoadingProvider, ThemeProvider, UserProvider]
 
 const AppContextProvider = combineComponents(...providers)
 export default AppContextProvider

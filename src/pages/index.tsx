@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
-import { Homepage } from '@templates'
+import { Navigation, Homepage } from '@templates'
 const Home: NextPage = () => {
   return (
-    <div>
+    <Navigation>
       <Homepage />
-    </div>
+    </Navigation>
   )
 }
 

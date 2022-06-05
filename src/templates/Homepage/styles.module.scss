@@ -1,3 +1,47 @@
 .homepage {
-  
+  background-color: var(--Default-color-grey-light);
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: var(--spacing-5);
+
+  .weatherIcon {
+    width: 240px;
+    margin: calc(-1 * var(--spacing-4)) 0 calc(-1 * var(--spacing-6));
+    pointer-events: none;
+  }
+
+  .temperature {
+    font-size: 112px;
+    font-weight: var(--font-weight-regular);
+    color: var(--Default-color-dark);
+    position: relative;
+
+    &:before {
+      content: '°C';
+      position: absolute;
+      right: 0;
+      top: var(--spacing-5);
+      font-size: var(--font-heading-md);
+      font-weight: var(--font-weight-bold);
+      color: var(--color-grey);
+      transform: translateX(calc(100% + var(--spacing-1)));
+    }
+  }
+
+  .cityName {
+    color: var(--color-grey);
+    margin: var(--spacing-2) 0 var(--spacing-4);
+  }
+
+  .information {
+    span {
+      color: var(--color-grey);
+
+      &:first-of-type {
+        margin-right: var(--spacing-4);
+      }
+    }
+  }
 }

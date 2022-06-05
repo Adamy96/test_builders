@@ -1,0 +1,38 @@
+.weatherReport {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  // CSS Grid/Flexbox bug size workaround
+  // @see https://github.com/kenwheeler/slick/issues/982
+  min-height: 0;
+  min-width: 0;
+  padding: 0 var(--spacing-5);
+
+  .tabs {
+    margin: var(--spacing-5) 0 var(--spacing-3);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li:not(:last-of-type) {
+      margin-right: var(--spacing-5);
+    }
+
+    .tabTitle {
+      color: var(--Default-color-grey-dark);
+      padding-bottom: var(--spacing-1);
+
+      &.active {
+        color: var(--color-blue-light);
+        border-bottom: 1px solid var(--color-blue);
+      }
+    }
+  }
+
+  .swiper {
+    padding: var(--spacing-1) 0 var(--spacing-1) var(--spacing-half);
+  }
+
+  .content {}
+}
