@@ -1,12 +1,20 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import Cors from 'cors'
+import { initMiddleware } from '@helper'
 const axios = require("axios");
 import { WEATHER_API_URL } from '@constants';
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-const getWeather = (
+const cors = initMiddleware(
+  Cors({
+    methods: ['GET'],
+  })
+)
+
+const getWeather = async (
   req: NextApiRequest,
   res: NextApiResponse
 ) => {
+  await cors(req, res)
   const { lat, lon } = req.query
   const options = {
     method: 'GET',
