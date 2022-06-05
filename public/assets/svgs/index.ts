@@ -1,4 +1,4 @@
-export { default as ClearSvg } from './Clear.svg'
+export { default as ClearSvg } from './clear.svg'
 export { default as CloudySvg } from './cloudy.svg'
 export { default as DrizzleSvg } from './drizzle.svg'
 export { default as DustSvg } from './dust.svg'

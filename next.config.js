@@ -15,7 +15,7 @@ module.exports = (phase) => {
   const env = {
     NextUrl: (() => {
       if (isLocalhost) return 'http://localhost:3000'
-      return 'prodUrl'
+      return 'https://test-builders.vercel.app'
     })()
   }
 
